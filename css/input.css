@@ -1,0 +1,135 @@
+/*************************
+    Tailwind setup
+**************************/
+
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --blur-*: initial;
+  --default-*: initial;
+  --perspective-*: initial;
+  --drop-*: initial;
+  --shadow-*: initial;
+  --color-*: initial;
+  --container-*: initial;
+  --text-*: initial;
+  --font-weight-*: initial;
+  --tracking-*: initial;
+  --leading-*: initial;
+  --radius-*: initial;
+  --inset-*: initial;
+  --inset-shadow-*: initial;
+  --ease-*: initial;
+  --aspect-*: initial;
+  --font-*: initial;
+  --spacing-*: initial;
+
+  --breakpoint-400px: 400px;
+  --breakpoint-500px: 500px;
+  --breakpoint-600px: 600px;
+  --breakpoint-700px: 700px;
+  --breakpoint-800px: 800px;
+  --breakpoint-900px: 900px;
+  --breakpoint-1000px: 1000px;
+  --breakpoint-1100px: 1100px;
+  --breakpoint-1200px: 1200px;
+  --breakpoint-1300px: 1300px;
+  --breakpoint-1400px: 1400px;
+  --breakpoint-1500px: 1500px;
+  --breakpoint-1600px: 1600px;
+  --breakpoint-1700px: 1700px;
+  --breakpoint-1800px: 1800px;
+  --breakpoint-1900px: 1900px;
+}
+
+/*************************
+    Custom styles
+**************************/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-cover bg-no-repeat bg-right-top;
+  background-image: url('../img/bg-desktop@2x.webp');
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url('../img/bg-desktop@2x.webp');
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-image: none;
+    background-color: #F8FDFB;
+  }
+}
+
+.wrapper {
+  @apply w-full 1100px:w-[90%] max-w-[1400px] mx-auto;
+}
+
+.main-button {
+  font-family: 'Bebas Neue', sans-serif;
+  background: radial-gradient(50% 50% at 50% 50%, #0BCD63 0%, #009F48 100%);
+  @apply flex items-center justify-center relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
+}
+
+.tg-button {
+  font-family: 'Bebas Neue', sans-serif;
+  background: radial-gradient(50% 50% at 50% 50%, #43BEFA 0%, #009AE6 100%);
+  @apply flex items-center justify-center relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
+}
+
+.submit-button {
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
+  background: radial-gradient(50% 50% at 50% 50%, #0BCD63 0%, #009F48 100%);
+  @apply relative w-full overflow-hidden rounded-full uppercase h-[60px] 800px:h-[70px] 1200px:h-[70px] text-[#fff] text-[24px] 800px:text-[28px] 1200px:text-[32px] cursor-pointer;
+}
+
+.main-button::before, .submit-button::before, .tg-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  animation: shine 2s infinite;
+}
+
+.custom-shadow {
+  box-shadow: 0 9px 18px 0 #00000014;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
