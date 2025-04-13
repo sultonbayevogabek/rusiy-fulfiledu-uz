@@ -9,7 +9,7 @@
     joinButton.disabled = true;
     await statistics.onClickTgBtn();
     joinButton.disabled = false;
-    window.location.href = 'https://t.me/+Vd4GWoYhkZwzYmMy';
+    window.location.href = 'https://t.me/+RrBFtqIZwKZkNTcy';
   })
 
   if (user && user?.name && user?.phone && user?.time) {
@@ -21,7 +21,7 @@
     formData.append(`Foydalanuvchi ID`, statistics.userId);
     formData.append(`Timestamp`, statistics.time?.toString());
 
-    let response = await fetch('https://script.google.com/macros/s/AKfycbz8o9UdeNLVRo3MpRNZmHyHynT9J4tBHP7IFcOomdf22BSLTcnql_cqEII3hE_b1Ac88g/exec', {
+    let response = await fetch('https://script.google.com/macros/s/AKfycbzxwXnhu47vjwWcdELyA5vpYyDkjklAwakfRWF9i80GmNund7A55t9MeV-enmQ36PZe/exec', {
       method: 'POST',
       body: formData
     })
