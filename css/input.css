@@ -82,7 +82,7 @@ body {
 
 .tg-button {
   font-family: 'Bebas Neue', sans-serif;
-  background: radial-gradient(50% 50% at 50% 50%, #1E8AB5 0%, #007AAB 100%);
+  background: #0088cc;
   @apply flex items-center justify-center relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
 }
 
