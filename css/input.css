@@ -50,17 +50,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   @apply bg-cover bg-no-repeat bg-right-top;
-  background-image: url('../img/bg-desktop@2x.webp');
+  background-image: url('../img/bg-desktop.webp');
 }
 
 .font-bebas {
   font-family: "Bebas Neue", sans-serif;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  body {
-    background-image: url('../img/bg-desktop@2x.webp');
-  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -76,7 +70,7 @@ body {
 
 .main-button {
   font-family: 'Bebas Neue', sans-serif;
-  background: radial-gradient(50% 50% at 50% 50%, #E75E5E 0%, #AC3333 100%);
+  background: #0866FF;
   @apply flex items-center justify-center relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
 }
 
@@ -89,7 +83,7 @@ body {
 .submit-button {
   font-family: 'Bebas Neue', sans-serif;
   cursor: pointer;
-  background: radial-gradient(50% 50% at 50% 50%, #E75E5E 0%, #AC3333 100%);
+  background: #0866FF;
   @apply relative w-full overflow-hidden rounded-full uppercase h-[60px] 800px:h-[70px] 1200px:h-[70px] text-[#fff] text-[24px] 800px:text-[28px] 1200px:text-[32px] cursor-pointer;
 }
 
@@ -106,7 +100,7 @@ body {
 }
 
 .custom-shadow {
-  box-shadow: 0px 9px 18px 0px #F4E6E6;
+  box-shadow: 0px 9px 18px 0px #0866FF22;
 }
 
 @keyframes shine {
