@@ -112,6 +112,11 @@ body {
   }
 }
 
+.gift {
+  transition: transform 0.3s ease-in-out;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
 @keyframes shake {
   0%, 100% {
     transform: rotate(0deg);
