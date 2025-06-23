@@ -7,7 +7,7 @@
   joinButton?.addEventListener('click', async (e) => {
     joinButton.disabled = true;
     joinButton.disabled = false;
-    window.location.href = 'https://t.me/+8p05EwGh81kwMDcy';
+    window.location.href = 'https://t.me/+TnqRB3Ob2VRjYzgy';
   })
 
   if (user && user?.name && user?.phone && user?.time) {
@@ -17,7 +17,7 @@
     formData.append('Telefon raqami', user?.phone);
     formData.append(`Ro'yxatdan o'tgan vaqti`, user?.time);
 
-    let response = await fetch('https://script.google.com/macros/s/AKfycbxTovMvj2zXCkn_8E6FAgAFizwzUgjPlZbHfaGcgSvi_Tj7ZD9VB6lVDhhulpGDrRyyZA/exec', {
+    let response = await fetch('https://script.google.com/macros/s/AKfycbxxuCzMoJpFwsa2wBOvo_ETeQrp-3OKS4lJGxvdkwxDQBNqM38IcNeoxqHiRET2t3Zi/exec', {
       method: 'POST',
       body: formData
     })
