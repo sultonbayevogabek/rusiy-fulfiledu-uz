@@ -76,7 +76,7 @@ body {
 
 .tg-button {
   font-family: 'Bebas Neue', sans-serif;
-  background: #379863;
+  background: #22a0dc;
   @apply flex items-center justify-center relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[32px] 1200px:text-[40px] cursor-pointer;
 }
 
