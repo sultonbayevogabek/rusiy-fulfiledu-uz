@@ -5,8 +5,6 @@
 
   const joinButton = document.querySelector('#joinToChannel')
   joinButton?.addEventListener('click', async (e) => {
-    joinButton.disabled = true;
-    joinButton.disabled = false;
     window.location.href = 'https://t.me/+agQcUtyLCOFjOTIy';
   })
 
