@@ -3,8 +3,7 @@
 (async _ => {
   let user = JSON.parse(localStorage.getItem('user'));
 
-  const joinButton = document.querySelector('#joinToChannel')
-  joinButton?.addEventListener('click', async (e) => {
+  document.querySelector('#joinToChannel')?.addEventListener('click', async () => {
     window.location.href = 'https://t.me/+DRdCsM3OsU45YjEy';
   })
 
