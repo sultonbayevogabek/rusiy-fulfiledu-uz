@@ -5,7 +5,7 @@
 
   const joinButton = document.querySelector('#joinToChannel')
   joinButton?.addEventListener('click', async (e) => {
-    window.location.href = 'https://t.me/+YnaTZveWsyo3OTUy';
+    window.location.href = 'https://t.me/+3VypROI83O42MjJi';
   })
 
   if (user && user?.name && user?.phone && user?.time) {
