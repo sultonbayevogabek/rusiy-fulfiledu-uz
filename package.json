@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.0.6",
+    "chokidar": "^4.0.3",
     "tailwindcss": "^4.0.6"
+  },
+  "scripts": {
+    "dev:index": "tailwindcss --config tailwind.index.config.js -i ./css/input-index.css -o ./css/index.css --watch --minify",
+    "dev:telegram": "tailwindcss --config tailwind.telegram.config.js -i ./css/input-telegram.css -o ./css/telegram.css --watch --minify",
+    "dev:all": "npm run dev:index && npm run dev:telegram"
   }
 }

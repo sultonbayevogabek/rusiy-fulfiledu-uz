@@ -1,0 +1,111 @@
+/*************************
+    Tailwind setup
+**************************/
+
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-400px: 400px;
+  --breakpoint-500px: 500px;
+  --breakpoint-600px: 600px;
+  --breakpoint-700px: 700px;
+  --breakpoint-800px: 800px;
+  --breakpoint-900px: 900px;
+  --breakpoint-1000px: 1000px;
+  --breakpoint-1100px: 1100px;
+  --breakpoint-1200px: 1200px;
+  --breakpoint-1300px: 1300px;
+  --breakpoint-1400px: 1400px;
+  --breakpoint-1500px: 1500px;
+  --breakpoint-1600px: 1600px;
+  --breakpoint-1700px: 1700px;
+  --breakpoint-1800px: 1800px;
+  --breakpoint-1900px: 1900px;
+}
+
+/*************************
+    Custom styles
+**************************/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  @apply bg-cover bg-no-repeat bg-right-top;
+  background-image: url('../img/bg-desktop@2x.webp');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url('../img/bg-desktop@2x.webp');
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-image: none;
+    background-color: #F8FDFB;
+  }
+}
+
+.wrapper {
+  @apply w-full 1100px:w-[90%] max-w-[1400px] mx-auto px-[15px];
+}
+
+.main-button {
+  background: radial-gradient(50% 50% at 50% 50%, #E75E5E 0%, #AC3333 100%);
+  @apply flex items-center justify-center relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
+  font-weight: 700;
+}
+
+.tg-button {
+  background: #0088cc;
+  @apply flex items-center justify-center relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
+  font-weight: 700;
+}
+
+.submit-button {
+  cursor: pointer;
+  background: radial-gradient(50% 50% at 50% 50%, #E75E5E 0%, #AC3333 100%);
+  @apply relative w-full overflow-hidden rounded-full uppercase h-[60px] 800px:h-[70px] 1200px:h-[70px] text-[#fff] text-[24px] 800px:text-[28px] 1200px:text-[32px] cursor-pointer;
+  font-weight: 700;
+}
+
+.main-button::before, .submit-button::before, .tg-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  animation: shine 2s infinite;
+}
+
+.custom-shadow {
+  box-shadow: 0px 9px 18px 0px #F4E6E6;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
